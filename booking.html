@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Booking | JMROWLAND</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2d9d5c0b2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="JMROWLAND Home">
+        <img class="brand-logo" src="https://i.ibb.co/FLMf2DS6/logo.png" alt="JMROWLAND Logo">
+        <div class="brand-text">
+          <span class="brand-name">JMROWLAND</span>
+          <span class="brand-tag">CLEANING SERVICES</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a class="active" href="booking.html">Booking</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="pill" href="https://wa.me/" target="_blank" rel="noreferrer">
+          <span class="pill-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+          <span class="pill-text">WhatsApp</span>
+        </a>
+        <a class="btn btn-primary" href="booking.html">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE -->
+  <main class="page">
+
+    <section class="booking-hero" aria-label="Booking intro">
+      <div class="container">
+        <h1 class="booking-title">We’re Excited to Help you With All your<br>Cleaning Needs</h1>
+      </div>
+    </section>
+
+    <section class="booking-wrap" aria-label="Booking form section">
+      <div class="container">
+        <div class="booking-card">
+
+          <!-- LEFT -->
+          <div class="booking-left">
+            <h2 class="booking-card-title">Book Our Services Today!</h2>
+
+            <!-- Stepper -->
+            <div class="stepper" aria-label="Booking steps">
+              <span class="step is-active">1</span>
+              <span class="step-line"></span>
+              <span class="step">2</span>
+              <span class="step-line"></span>
+              <span class="step">3</span>
+            </div>
+
+            <h3 class="booking-subtitle">Your Booking Details</h3>
+
+            <form class="booking-form" action="#" method="post">
+              <div class="grid-3">
+                <div class="field">
+                  <label for="service">Select Service</label>
+                  <select id="service" name="service" required>
+                    <option value="" selected disabled>Select service that fits you best</option>
+                    <option>Residential Cleaning</option>
+                    <option>Commercial Cleaning</option>
+                    <option>Specialized Cleaning</option>
+                    <option>Exterior Cleaning</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="bedrooms">Bedrooms</label>
+                  <select id="bedrooms" name="bedrooms">
+                    <option>1</option><option>2</option><option>3</option><option>4+</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="bathrooms">Bathrooms</label>
+                  <select id="bathrooms" name="bathrooms">
+                    <option>1</option><option>2</option><option>3</option><option>4+</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="grid-3">
+                <div class="field">
+                  <label for="extras">Extras</label>
+                  <select id="extras" name="extras">
+                    <option value="" selected>Select</option>
+                    <option>Inside Oven</option>
+                    <option>Inside Fridge</option>
+                    <option>Windows</option>
+                    <option>Balcony/Patio</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="frequency">Frequency</label>
+                  <select id="frequency" name="frequency">
+                    <option value="" selected>Select</option>
+                    <option>One-time</option>
+                    <option>Weekly</option>
+                    <option>Bi-weekly</option>
+                    <option>Monthly</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="sqft">Square ft.</label>
+                  <input id="sqft" name="sqft" type="text" placeholder="e.g. 1000 sq ft">
+                </div>
+              </div>
+
+              <div class="grid-2">
+                <div class="field">
+                  <label for="date">Date</label>
+                  <input id="date" name="date" type="date" required>
+                </div>
+
+                <div class="field">
+                  <label for="time">Time</label>
+                  <input id="time" name="time" type="time" value="08:00">
+                </div>
+              </div>
+
+              <button class="btn btn-cta" type="submit">Continue</button>
+            </form>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="booking-right" aria-label="Booking image">
+            <!-- replace with pngtree or assets/booking.jpg -->
+            <img src="assets/booking.jpg" alt="Cleaner at work">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================
+     WHY CHOOSE US (missing section)
+======================== -->
+<section class="why-band" aria-label="Why choose JMROWLAND">
+  <div class="why-inner">
+    <p class="why-kicker">WHY CHOOSE US</p>
+    <h2 class="why-title">We Are Experienced &amp; We<br>Have Expert Teams</h2>
+
+    <!-- Decorative leaves (optional, can be replaced by pngtree svgs/images) -->
+    <span class="why-leaf why-leaf-left" aria-hidden="true"></span>
+    <span class="why-leaf why-leaf-right" aria-hidden="true"></span>
+
+    <div class="why-cards">
+      <article class="why-card">
+        <div class="why-ic"><i class="fa-solid fa-badge-check"></i></div>
+        <h3>Try It Before You Buy<br>It Guarantee</h3>
+        <p>Experience our service first and pay after the cleaning is completed to your satisfaction.</p>
+      </article>
+
+      <article class="why-card">
+        <div class="why-ic"><i class="fa-solid fa-star"></i></div>
+        <h3>Top-Rated Cleaning<br>Company</h3>
+        <p>Trusted for professionalism, attention to detail, and consistently high standards.</p>
+      </article>
+
+      <article class="why-card">
+        <div class="why-ic"><i class="fa-solid fa-shield-heart"></i></div>
+        <h3>100% Satisfaction<br>Guarantee</h3>
+        <p>We’ll work with you until you’re delighted with the result — that’s our promise.</p>
+      </article>
+
+      <article class="why-card">
+        <div class="why-ic"><i class="fa-solid fa-user-check"></i></div>
+        <h3>Vetted &amp; Background<br>Checked Cleaners</h3>
+        <p>Our team goes through a rigorous selection process so your home is in safe hands.</p>
+      </article>
+    </div>
+
+    <a class="why-cta" href="contact.html">Contact us</a>
+  </div>
+</section>
+  </main>
+
+  <!-- GLOBAL FOOTER (same as home) -->
+  <footer class="site-footer" aria-label="Footer">
+    <div class="container">
+      <div class="footer-band">
+        <div class="footer-left">
+          <h3>Our Goal is to Wow You With Every Clean</h3>
+          <a class="btn btn-ghost footer-btn" href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-mini">CONTACT INFO</p>
+          <div class="footer-chips">
+            <div class="chip">
+              <span class="chip-ic"><i class="fa-solid fa-location-dot"></i></span>
+              <span>Embu, Kenya (Service Area)</span>
+            </div>
+
+            <a class="chip" href="tel:+254700000000">
+              <span class="chip-ic"><i class="fa-solid fa-phone"></i></span>
+              <span>+254 700 000 000</span>
+            </a>
+
+            <a class="chip" href="https://wa.me/" target="_blank" rel="noreferrer">
+              <span class="chip-ic"><i class="fa-brands fa-whatsapp"></i></span>
+              <span>Chat on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© <span id="yearFooter"></span> JMROWLAND. All rights reserved.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("yearFooter").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+
+</body>
+</html>
